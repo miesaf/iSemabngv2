@@ -1,4 +1,4 @@
-# isembang
+# iSembang v2
 
 ## Project setup
 ```
