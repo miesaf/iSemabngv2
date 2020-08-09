@@ -4,6 +4,11 @@ import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
+// Time Format Setting
+const moment = require('moment')
+require('moment/locale/ms-my')
+Vue.use(require('vue-moment'), { moment })
+
   const routes = [
   {
     path: '/',
