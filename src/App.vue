@@ -8,6 +8,13 @@
   </div>
 </template>
 
+<script>
+import firebase from "firebase/app"
+
+export default {
+}
+</script>
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

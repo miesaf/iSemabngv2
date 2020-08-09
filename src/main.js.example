@@ -1,0 +1,37 @@
+import Vue from 'vue'
+import App from './App.vue'
+import router from './router'
+import store from './store'
+
+// Firebase App (the core Firebase SDK) is always required and
+// must be listed before other Firebase SDKs
+import firebase from "firebase/app"
+
+// Add the Firebase services that you want to use
+require("firebase/auth")
+require("firebase/database")
+
+// TODO: Replace the following with your app's Firebase project configuration
+var firebaseConfig = {
+  apiKey: ,                 // ATTENTION HERE!!
+  authDomain: ,             // ATTENTION HERE!!
+  databaseURL: ,            // ATTENTION HERE!!
+  projectId: ,              // ATTENTION HERE!!
+  storageBucket: ,          // ATTENTION HERE!!
+  messagingSenderId: ,      // ATTENTION HERE!!
+  appId: ,                  // ATTENTION HERE!!
+  measurementId:            // ATTENTION HERE!!
+}
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig)
+
+window.database = firebase.database()
+
+Vue.config.productionTip = false
+
+new Vue({
+  router,
+  store,
+  render: h => h(App)
+}).$mount('#app')
